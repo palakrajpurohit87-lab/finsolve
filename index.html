@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <meta content="mobile_tab" name="shell-type"/>
+  <title>FinSolve PRO - 100+ Financial Management Practical Sums & Step-by-Step Solver</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN with Custom Theme Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary": "#006c4a",
+            "on-secondary-fixed": "#002114",
+            "surface-container-low": "#eff4ff",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#eaf1ff",
+            "secondary-fixed-dim": "#68dba9",
+            "surface-tint": "#565e74",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#bec6e0",
+            "primary-fixed": "#dae2fd",
+            "on-primary-container": "#7c839b",
+            "secondary-container": "#82f5c1",
+            "background": "#f8f9ff",
+            "on-primary": "#ffffff",
+            "surface-container": "#e5eeff",
+            "on-secondary-fixed-variant": "#005137",
+            "tertiary-fixed-dim": "#ffb77d",
+            "on-primary-fixed": "#131b2e",
+            "tertiary-fixed": "#ffdcc3",
+            "tertiary-container": "#2f1500",
+            "surface-dim": "#cbdbf5",
+            "surface-container-highest": "#d3e4fe",
+            "secondary-fixed": "#85f8c4",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#2f1500",
+            "surface-container-high": "#dce9ff",
+            "on-primary-fixed-variant": "#3f465c",
+            "on-secondary-container": "#00714e",
+            "on-background": "#0b1c30",
+            "primary-container": "#131b2e",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "primary": "#000000",
+            "inverse-surface": "#213145",
+            "on-surface-variant": "#45464d",
+            "outline": "#76777d",
+            "on-surface": "#0b1c30",
+            "surface": "#f8f9ff",
+            "on-tertiary-container": "#c76c00",
+            "surface-variant": "#d3e4fe",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "on-error-container": "#93000a",
+            "tertiary": "#000000",
+            "inverse-primary": "#bec6e0",
+            "outline-variant": "#c6c6cd",
+            "surface-bright": "#f8f9ff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin": "2rem",
+            "margin-mobile": "1rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem"
+          },
+          fontFamily: {
+            "display-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "code-sm": ["JetBrains Mono", "monospace"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["JetBrains Mono", "monospace"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "code-formula": ["JetBrains Mono", "monospace"],
+            "label-md": ["JetBrains Mono", "monospace"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          fontSize: {
+            "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "code-sm": ["12px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "code-formula": ["15px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+  
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body class="bg-[#e9edf5] font-body-md text-body-md text-on-surface antialiased">
+
+  <!-- Desktop Utility Top Bar (Toggle Mobile Frame / Fullscreen) -->
+  <div id="app-mode-bar" class="w-full bg-surface-container-high/80 backdrop-blur-md px-4 py-1.5 flex items-center justify-between border-b border-outline-variant/30 text-xs no-print">
+    <div class="flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+      <span class="font-label-sm text-label-sm font-semibold text-on-surface">FinSolve Exam Engine</span>
+      <span id="backend-status-badge" class="text-on-surface-variant font-code-sm flex items-center gap-1">v2.4 Active</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="toggle-frame-mode" class="flex items-center gap-1 bg-surface-container-lowest text-on-surface hover:text-secondary px-2.5 py-1 rounded-md shadow-sm font-label-sm text-label-sm transition-all" title="Toggle between smartphone preview and wide layout">
+        <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+        <span class="hidden sm:inline">Expanded</span>
+      </button>
+      <button onclick="window.print()" class="flex items-center gap-1 bg-surface-container-lowest text-on-surface hover:text-secondary px-2.5 py-1 rounded-md shadow-sm font-label-sm text-label-sm transition-all" title="Print or Save PDF">
+        <span class="material-symbols-outlined text-[16px]">print</span>
+        <span class="hidden sm:inline">Print / PDF</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Viewport Container (Switchable between Mobile Device Shell & Expanded) -->
+  <div id="app-viewport" class="app-viewport mode-mobile-frame flex flex-col min-h-screen relative bg-surface">
+
+    <!-- GLOBAL FIXED APP HEADER -->
+    <header class="fixed top-0 w-full max-w-[inherit] z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-outline-variant/15">
+      <div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm">
+        <div class="flex items-center gap-space-sm min-w-0 cursor-pointer" onclick="AppState.navigate('topics')">
+          <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm font-bold shadow-sm flex-shrink-0">
+            <span>∑</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-space-xs">
+              <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">FinSolve</span>
+              <span class="font-label-sm text-label-sm text-secondary uppercase bg-secondary-container/40 px-1.5 py-0.5 rounded font-bold">PRO</span>
+            </div>
+            <span class="font-body-sm text-body-sm text-on-surface-variant truncate">100+ Step-by-Step Practical Sums</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-space-sm flex-shrink-0">
+          <button id="streakHeaderBtn" class="flex items-center gap-1 bg-surface-container-high hover:bg-surface-container-highest px-2 py-1 rounded transition-colors" title="View 7-day study streak">
+            <span class="material-symbols-outlined text-[16px] text-[#c76c00] filled">local_fire_department</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-bold">7d</span>
+          </button>
+          <div class="relative flex items-center justify-center cursor-pointer" onclick="AppState.showToast('Logged in as MBA Scholar (CFA Candidate)', 'account_circle')">
+            <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxH8m_v_Lu36cp1xpvny3EhSPgcb7ZO6d5ulIAvKEyWtjE0FEuOQdbyjZBIhJqVcM6KsZRlcim72ErbXgPBHwmUQNVfNokodlnZHGeEF_jqC93IqskHayDYy_dTAK7guJuloBdZBffVxal27yT2lrrRknYKVOpHr4mh3Bgk6HIf9JapZ_TpqGcr-spUWwmEypRLbi1v5mGrpb2mM5R05hQ9yrnIm5xFBLR53F1ivIa"/>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT ROUTING CONTAINER -->
+    <main class="flex flex-col relative w-full pt-16 pb-24 bg-surface px-gutter-mobile flex-1">
+
+      <!-- ========================================== -->
+      <!-- VIEW 1: HOME - TOPICS HUB                  -->
+      <!-- ========================================== -->
+      <section id="view-topics" class="flex flex-col w-full gap-space-lg pt-2">
+        <!-- Interactive Search Experience -->
+        <div class="relative w-full">
+          <div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-sm transition-all focus-within:shadow-md focus-within:bg-surface-container-low border border-outline-variant/20">
+            <span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span>
+            <input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none" id="topic-search-input" placeholder="Search 100+ practical sums, formulas (e.g. IRR, Annuity, WACC)..." type="text"/>
+            <button class="flex items-center justify-center p-1 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Filter Settings">
+              <span class="material-symbols-outlined text-[16px]">tune</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mastery Progress Banner with Animated Momentum -->
+        <div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-md shadow-md">
+          <div class="absolute -right-10 -bottom-10 w-36 h-36 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
+          <div class="absolute right-4 top-4 opacity-15 font-code-formula text-sm select-none text-on-primary">
+            ∑(CF_t / (1+r)^t)
+          </div>
+          <div class="flex flex-col gap-space-sm relative z-10">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1.5 bg-surface-container-lowest/10 px-2 py-0.5 rounded-full backdrop-blur-md">
+                <span class="material-symbols-outlined text-secondary-fixed text-[14px]">school</span>
+                <span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider font-semibold">CFA & MBA Targeted</span>
+              </div>
+              <span class="font-label-md text-label-md text-secondary-fixed font-bold">36% Complete</span>
+            </div>
+            <div>
+              <h2 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Semester Exam Prep</h2>
+              <p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">42 of 118 Sums Mastered with full derivation</p>
+            </div>
+            <!-- Segmented Dual Progress Bar -->
+            <div class="w-full flex flex-col gap-1.5 mt-1">
+              <div class="h-2 w-full bg-surface-container-highest/20 rounded-full overflow-hidden flex">
+                <div class="h-full bg-secondary transition-all duration-700 ease-out" style="width: 36%;"></div>
+                <div class="h-full bg-secondary-fixed-dim/40 transition-all duration-700 ease-out" style="width: 14%;"></div>
+              </div>
+              <div class="flex justify-between items-center font-label-sm text-label-sm text-on-primary-container">
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>42 Mastered</span>
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim/50 inline-block"></span>16 In Review</span>
+                <span>60 Unopened</span>
+              </div>
+            </div>
+            <!-- Quick Resume Trigger -->
+            <div class="mt-space-xs pt-space-xs flex items-center justify-between bg-surface-container-lowest/5 rounded-lg px-space-sm py-2">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-secondary-fixed text-[20px] filled">play_circle</span>
+                <div class="flex flex-col min-w-0">
+                  <span class="font-label-sm text-label-sm text-on-primary-container uppercase">Resume Queue</span>
+                  <span class="font-body-sm text-body-sm text-on-primary font-medium truncate">Problem #23: Capital Budgeting EAC Split</span>
+                </div>
+              </div>
+              <button onclick="AppState.navigate('solver-workbench', { problemId: 23 })" class="bg-secondary hover:bg-secondary/90 text-on-secondary px-3 py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 flex-shrink-0 transition-transform active:scale-95 shadow-sm">
+                <span>Solve</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topics Grid Section -->
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Topic Mastery Hub</h3>
+              <span class="bg-surface-container-high font-label-sm text-label-sm px-2 py-0.5 rounded text-on-surface-variant font-bold">6 Units</span>
+            </div>
+            <a id="viewSyllabusBtn" class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-0.5 cursor-pointer" href="#">
+              View Syllabus
+              <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            </a>
+          </div>
+
+          <div class="flex flex-col gap-space-sm" id="topics-list">
+            <!-- Topic 1 -->
+            <div onclick="AppState.navigate('problems')" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow cursor-pointer active:scale-[0.99] border border-outline-variant/15">
+              <div class="flex items-start justify-between gap-space-sm">
+                <div class="flex items-center gap-space-sm min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">hourglass_top</span>
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <h4 class="font-headline-sm text-[16px] leading-tight text-on-surface truncate">Time Value of Money & Annuities</h4>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">18 of 24 completed • 75%</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-secondary text-[20px] filled">check_circle</span>
+              </div>
+              <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 75%;"></div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">PV</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">FV</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">PMT</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">EAR</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-secondary font-semibold">24 Sums</span>
+              </div>
+            </div>
+
+            <!-- Topic 2: Capital Budgeting (Primary Spotlight) -->
+            <div onclick="AppState.navigate('problems')" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow cursor-pointer active:scale-[0.99] border-2 border-secondary/30">
+              <div class="flex items-start justify-between gap-space-sm">
+                <div class="flex items-center gap-space-sm min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">account_balance</span>
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <div class="flex items-center gap-1.5">
+                      <h4 class="font-headline-sm text-[16px] leading-tight text-on-surface truncate">Capital Budgeting & Cash Flows</h4>
+                      <span class="font-label-sm text-[10px] bg-secondary text-on-secondary px-1.5 py-0.2 rounded uppercase">Focus</span>
+                    </div>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">8 of 22 completed • 36%</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-secondary text-[20px]">timelapse</span>
+              </div>
+              <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 36.3%;"></div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">NPV</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">IRR</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">PI</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">EAC</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-secondary font-bold">22 Sums</span>
+              </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div onclick="AppState.navigate('problems')" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow cursor-pointer active:scale-[0.99] border border-outline-variant/15">
+              <div class="flex items-start justify-between gap-space-sm">
+                <div class="flex items-center gap-space-sm min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">pie_chart</span>
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <h4 class="font-headline-sm text-[16px] leading-tight text-on-surface truncate">Cost of Capital & WACC</h4>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">6 of 16 completed • 38%</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant/40 text-[20px]">pending</span>
+              </div>
+              <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 38%;"></div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Ke</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Kd</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">WACC</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">CAPM</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">16 Sums</span>
+              </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div onclick="AppState.navigate('problems')" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow cursor-pointer active:scale-[0.99] border border-outline-variant/15">
+              <div class="flex items-start justify-between gap-space-sm">
+                <div class="flex items-center gap-space-sm min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">show_chart</span>
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <h4 class="font-headline-sm text-[16px] leading-tight text-on-surface truncate">Bond Valuation & Yield to Maturity</h4>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">4 of 15 completed • 27%</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant/40 text-[20px]">pending</span>
+              </div>
+              <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 27%;"></div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">YTM</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Duration</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Convexity</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">15 Sums</span>
+              </div>
+            </div>
+
+            <!-- Topic 5 -->
+            <div onclick="AppState.navigate('problems')" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow cursor-pointer active:scale-[0.99] border border-outline-variant/15">
+              <div class="flex items-start justify-between gap-space-sm">
+                <div class="flex items-center gap-space-sm min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">sync_alt</span>
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <h4 class="font-headline-sm text-[16px] leading-tight text-on-surface truncate">Working Capital Management</h4>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">3 of 18 completed • 17%</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant/40 text-[20px]">pending</span>
+              </div>
+              <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 17%;"></div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">CCC</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">DSO</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Inventory Cycle</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">18 Sums</span>
+              </div>
+            </div>
+
+            <!-- Topic 6 -->
+            <div onclick="AppState.navigate('problems')" class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow cursor-pointer active:scale-[0.99] border border-outline-variant/15">
+              <div class="flex items-start justify-between gap-space-sm">
+                <div class="flex items-center gap-space-sm min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">analytics</span>
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <h4 class="font-headline-sm text-[16px] leading-tight text-on-surface truncate">Financial Ratio Analysis & DuPont</h4>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">3 of 15 completed • 20%</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant/40 text-[20px]">pending</span>
+              </div>
+              <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 20%;"></div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">ROE</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">ROA</span>
+                  <span class="font-code-sm text-code-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded">Quick Ratio</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">15 Sums</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recently Practiced Dynamic Carousel -->
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Recently Practiced</h3>
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Swipe to see more</span>
+          </div>
+
+          <!-- Horizontal Scroll Lane -->
+          <div class="flex gap-space-md overflow-x-auto pb-2 -mx-gutter-mobile px-gutter-mobile no-scrollbar snap-x snap-mandatory">
+            <!-- Card 1 -->
+            <div class="min-w-[280px] max-w-[280px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between snap-center gap-space-md border border-outline-variant/15">
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 bg-error-container text-on-error-container rounded font-bold uppercase tracking-wider">High Exam Frequency</span>
+                  <span class="font-code-sm text-code-sm text-on-surface-variant">Step 3/4</span>
+                </div>
+                <div>
+                  <span class="font-label-md text-label-md text-secondary font-bold">Sum #19</span>
+                  <h4 class="font-body-md text-body-md font-semibold text-on-surface line-clamp-2">
+                    Uneven Cash Flow NPV with 12% Cost of Capital
+                  </h4>
+                </div>
+                <div class="bg-surface-container-low p-2 rounded-lg font-code-sm text-code-sm text-on-surface-variant flex items-center justify-between">
+                  <span>Formula used:</span>
+                  <span class="text-on-surface font-semibold">∑ CFₜ/(1+k)ᵗ - I₀</span>
+                </div>
+              </div>
+              <button onclick="AppState.navigate('solver-workbench', { problemId: 19 })" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-colors">
+                <span>Continue Solving</span>
+                <span class="material-symbols-outlined text-[16px]">trending_flat</span>
+              </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="min-w-[280px] max-w-[280px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between snap-center gap-space-md border border-outline-variant/15">
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed rounded font-bold uppercase tracking-wider">Medium Difficulty</span>
+                  <span class="font-code-sm text-code-sm text-on-surface-variant">Step 1/3</span>
+                </div>
+                <div>
+                  <span class="font-label-md text-label-md text-secondary font-bold">Sum #34</span>
+                  <h4 class="font-body-md text-body-md font-semibold text-on-surface line-clamp-2">
+                    Semi-Annual Bond YTM Approximation & Interpolation
+                  </h4>
+                </div>
+                <div class="bg-surface-container-low p-2 rounded-lg font-code-sm text-code-sm text-on-surface-variant flex items-center justify-between">
+                  <span>Formula used:</span>
+                  <span class="text-on-surface font-semibold">C + (F-P)/n ÷ (F+P)/2</span>
+                </div>
+              </div>
+              <button onclick="AppState.navigate('solver-workbench', { problemId: 34 })" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-colors">
+                <span>Continue Solving</span>
+                <span class="material-symbols-outlined text-[16px]">trending_flat</span>
+              </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="min-w-[280px] max-w-[280px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between snap-center gap-space-md border border-outline-variant/15">
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded font-bold uppercase tracking-wider">Mastered</span>
+                  <span class="font-code-sm text-code-sm text-secondary font-semibold">100% Correct</span>
+                </div>
+                <div>
+                  <span class="font-label-md text-label-md text-secondary font-bold">Sum #12</span>
+                  <h4 class="font-body-md text-body-md font-semibold text-on-surface line-clamp-2">
+                    Growing Perpetuity Valuation with Flotation Costs
+                  </h4>
+                </div>
+                <div class="bg-surface-container-low p-2 rounded-lg font-code-sm text-code-sm text-on-surface-variant flex items-center justify-between">
+                  <span>Formula used:</span>
+                  <span class="text-on-surface font-semibold">P₀ = D₁ / (r - g)</span>
+                </div>
+              </div>
+              <button onclick="AppState.navigate('solver-workbench', { problemId: 12 })" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-colors">
+                <span>Review Steps</span>
+                <span class="material-symbols-outlined text-[16px]">replay</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Study Tip Module with Academic Polish -->
+        <div class="bg-surface-container-high/60 rounded-xl p-space-md flex flex-col gap-space-sm relative overflow-hidden border border-outline-variant/20">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+                <span class="material-symbols-outlined text-[16px]">lightbulb</span>
+              </div>
+              <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold">Examiner Insight</span>
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">DCF Modeling</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">How examiners twist Terminal Value in multi-stage DCF</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Watch out for the timing index: In a 5-year explicit forecast, the numerator for Terminal Value is <span class="font-code-formula text-[13px] bg-surface-container-lowest px-1.5 py-0.5 rounded font-bold text-on-surface">CF₆ = CF₅ × (1 + g)</span>, not CF₅ itself. Discounting must also bring TV back from Year 5 to Year 0.
+            </p>
+          </div>
+          <div class="flex items-center justify-between pt-1">
+            <div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-[14px] text-error">psychology</span>
+              <span>Common Pitfall: 73% miss the g-step</span>
+            </div>
+            <button onclick="AppState.navigate('saved')" class="text-secondary font-label-md text-label-md flex items-center gap-0.5 hover:underline font-semibold">
+              See Exam Gotchas
+              <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 2: PROBLEM LIST - CAPITAL BUDGETING   -->
+      <!-- ========================================== -->
+      <section id="view-problems" class="hidden flex flex-col w-full pb-10">
+        <div class="flex flex-col gap-space-sm pt-space-sm mb-space-md">
+          <div class="flex items-center justify-between">
+            <button onclick="AppState.navigate('topics')" class="inline-flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors py-1">
+              <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              <span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Topics</span>
+            </button>
+            <span class="inline-flex items-center gap-1 bg-surface-container px-2.5 py-1 rounded-full text-on-surface font-label-sm text-label-sm font-semibold">
+              <span class="material-symbols-outlined text-[14px] text-secondary">workspace_premium</span>
+              Weighted: 25 Marks
+            </span>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="font-headline-md text-headline-md text-on-surface tracking-tight font-bold">Capital Budgeting</span>
+              <span class="bg-secondary/10 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">Unit 4</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">22 Practical Sums • 8 Solved • Average Exam Weight: 25 Marks</p>
+          </div>
+
+          <div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden mt-1">
+            <div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 36.3%;"></div>
+          </div>
+        </div>
+
+        <!-- Filter Chips Bar -->
+        <div class="flex flex-col gap-space-sm mb-space-md">
+          <div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-gutter-mobile px-gutter-mobile no-scrollbar" id="categoryFilterContainer">
+            <button class="category-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm transition-all flex items-center gap-1 font-semibold" onclick="setCategoryFilter(this, 'all')">
+              <span>All</span>
+              <span class="opacity-75 font-code-sm text-code-sm">22</span>
+            </button>
+            <button class="category-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1" onclick="setCategoryFilter(this, 'npv')">
+              <span>NPV & IRR</span>
+              <span class="opacity-75 font-code-sm text-code-sm">9</span>
+            </button>
+            <button class="category-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1" onclick="setCategoryFilter(this, 'payback')">
+              <span>Payback & PI</span>
+              <span class="opacity-75 font-code-sm text-code-sm">7</span>
+            </button>
+            <button class="category-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1" onclick="setCategoryFilter(this, 'replacement')">
+              <span>Replacement</span>
+              <span class="opacity-75 font-code-sm text-code-sm">6</span>
+            </button>
+          </div>
+
+          <div class="flex items-center justify-between gap-space-xs pt-1">
+            <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar" id="difficultyFilterContainer">
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase mr-1 font-bold">Level:</span>
+              <button class="diff-chip px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant transition-colors" onclick="toggleDifficulty(this, 'basic')">Basic</button>
+              <button class="diff-chip px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant transition-colors" onclick="toggleDifficulty(this, 'exam')">Exam Level</button>
+              <button class="diff-chip px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant transition-colors" onclick="toggleDifficulty(this, 'advanced')">Advanced</button>
+            </div>
+            <button class="flex-shrink-0 flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" id="sortBtn" onclick="toggleSort()">
+              <span class="material-symbols-outlined text-[16px]">swap_vert</span>
+              <span>Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Problems Dynamic List Container -->
+        <div class="flex flex-col gap-space-md" id="problemsList">
+          <!-- Populated dynamically via AppState.renderProblemsView() -->
+        </div>
+
+        <!-- Spin Random Sum Action -->
+        <div class="mt-space-lg flex flex-col items-center">
+          <button class="w-full bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary py-3.5 px-space-md rounded-xl shadow-lg flex items-center justify-center gap-2 font-headline-sm text-headline-sm transition-all active:scale-[0.99] font-bold" onclick="triggerRandomSum()">
+            <span class="material-symbols-outlined text-[20px] filled">shuffle</span>
+            <span>Solve Random Practice Sum</span>
+          </button>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 text-center">Spins an unsolved exam-weighted problem from this chapter</p>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 3: STEP-BY-STEP SOLUTION VIEW         -->
+      <!-- ========================================== -->
+      <section id="view-solver-workbench" class="hidden flex flex-col w-full pb-8 space-y-4">
+        <!-- Topic & Context Metadata Pill -->
+        <div class="flex flex-wrap items-center justify-between gap-2 bg-surface-container-high px-3 py-2 rounded-xl">
+          <div class="flex items-center gap-1.5 min-w-0">
+            <span class="material-symbols-outlined text-[18px] text-secondary">analytics</span>
+            <span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Problem #23 • Capital Budgeting</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Advanced</span>
+            <span class="bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded shadow-sm font-semibold">15 Marks</span>
+          </div>
+        </div>
+
+        <!-- Full Problem Statement Highlight Box -->
+        <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-2 border border-outline-variant/15">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1.5 text-on-surface">
+              <span class="material-symbols-outlined text-[18px] text-on-surface-variant">description</span>
+              <h2 class="font-headline-sm text-headline-sm font-bold">Problem Statement</h2>
+            </div>
+            <span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded font-bold">Mutual Exclusion</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Delta Corp is evaluating two mutually exclusive machines. <strong class="font-semibold text-on-surface">Machine Alpha</strong> costs $60,000, incurs annual operating costs of $8,000, and lasts 3 years with zero salvage value. <strong class="font-semibold text-on-surface">Machine Beta</strong> costs $85,000, incurs annual operating costs of $6,000, and lasts 5 years with $5,000 salvage. Delta's cost of capital is 10%. Using the <span class="bg-surface-container-high px-1 py-0.5 rounded font-label-sm text-label-sm font-semibold">Equivalent Annual Cost (EAC)</span> method, determine which machine should be selected.
+          </p>
+        </div>
+
+        <!-- Given Variables Breakdown Card -->
+        <div class="bg-surface-container-low p-4 rounded-xl space-y-3 border border-outline-variant/15">
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Given Parameters</span>
+            <span class="font-code-sm text-code-sm text-secondary font-bold">r = 10% (0.10)</span>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5">
+            <!-- Machine Alpha Params -->
+            <div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm space-y-1.5 border border-outline-variant/10">
+              <div class="flex items-center justify-between pb-1">
+                <span class="font-headline-sm text-[15px] text-on-surface font-semibold">Alpha</span>
+                <span class="font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.2 rounded text-on-surface-variant font-mono">n = 3 yrs</span>
+              </div>
+              <div class="space-y-1 font-code-sm text-code-sm text-on-surface-variant">
+                <div class="flex justify-between"><span>Outlay (C₀):</span><span class="font-semibold text-on-surface">-$60,000</span></div>
+                <div class="flex justify-between"><span>Op. Cost:</span><span class="font-semibold text-on-surface">-$8,000/yr</span></div>
+                <div class="flex justify-between"><span>Salvage (SV):</span><span class="font-semibold text-on-surface">$0</span></div>
+              </div>
+            </div>
+            <!-- Machine Beta Params -->
+            <div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm space-y-1.5 border border-outline-variant/10">
+              <div class="flex items-center justify-between pb-1">
+                <span class="font-headline-sm text-[15px] text-on-surface font-semibold">Beta</span>
+                <span class="font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.2 rounded text-on-surface-variant font-mono">n = 5 yrs</span>
+              </div>
+              <div class="space-y-1 font-code-sm text-code-sm text-on-surface-variant">
+                <div class="flex justify-between"><span>Outlay (C₀):</span><span class="font-semibold text-on-surface">-$85,000</span></div>
+                <div class="flex justify-between"><span>Op. Cost:</span><span class="font-semibold text-on-surface">-$6,000/yr</span></div>
+                <div class="flex justify-between"><span>Salvage (SV):</span><span class="font-semibold text-secondary">+$5,000</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary Formula Callout Card -->
+        <div class="bg-tertiary-fixed/30 p-4 rounded-xl space-y-2.5 border border-tertiary-fixed-dim/30">
+          <div class="flex items-center gap-1.5 text-on-tertiary-fixed">
+            <span class="material-symbols-outlined text-[18px]">functions</span>
+            <span class="font-label-sm text-label-sm uppercase font-bold">Core Valuation Methodology</span>
+          </div>
+          <div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm space-y-2 font-code-formula text-code-formula text-on-surface">
+            <div class="flex items-center justify-between flex-wrap gap-1">
+              <span class="font-bold text-on-surface">EAC =</span>
+              <span class="text-on-surface-variant font-code-sm text-code-sm">Present Value of Total Costs ÷ PVIFA(r, n)</span>
+            </div>
+            <div class="pt-2 flex items-center justify-between flex-wrap gap-1 bg-surface-container-low px-2.5 py-1.5 rounded">
+              <span class="font-label-md text-label-md text-on-surface-variant font-semibold">PVIFA(r, n)</span>
+              <span class="font-bold text-secondary">[ 1 − (1 + r)<sup>-n</sup> ] ÷ r</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step-by-Step Manual Calculations Flow -->
+        <div class="space-y-3 pt-1">
+          <div class="flex items-center justify-between px-1">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Step-by-Step Derivation</h3>
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-bold">5 Milestones</span>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-3 border border-outline-variant/15">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-on-primary font-code-sm text-code-sm font-semibold">
+                1
+              </div>
+              <div class="min-w-0 flex-1">
+                <h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Present Value of Alpha's Costs</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Discount the 3-year operating annuity and aggregate with the initial capital outlay.</p>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg space-y-2 font-code-sm text-code-sm text-on-surface">
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2 rounded">
+                <span class="text-on-surface-variant">PVIFA(10%, 3 yrs)</span>
+                <span class="font-semibold">[1 − (1.10)<sup>-3</sup>] / 0.10 = <span class="text-secondary font-bold">2.48685</span></span>
+              </div>
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2 rounded">
+                <span class="text-on-surface-variant">PV of Operating Costs</span>
+                <span class="font-semibold">$8,000 × 2.48685 = <span class="text-on-surface font-bold">$19,894.80</span></span>
+              </div>
+              <div class="flex justify-between items-center bg-secondary-container/30 text-on-secondary-container p-2 rounded font-semibold">
+                <span>Total PV of Costs (Alpha)</span>
+                <span>$60,000 + $19,894.80 = $79,894.80</span>
+              </div>
+            </div>
+            <div class="bg-surface-container p-2.5 rounded-lg flex items-start gap-2">
+              <span class="material-symbols-outlined text-[17px] text-on-tertiary-container flex-shrink-0 mt-0.5">lightbulb</span>
+              <p class="font-body-sm text-body-sm text-on-surface">
+                <strong class="font-semibold">Examiner Tip:</strong> Do not treat initial capital outlay as a cash flow to be discounted; it is already committed at t = 0.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-3 border border-outline-variant/15">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-on-primary font-code-sm text-code-sm font-semibold">
+                2
+              </div>
+              <div class="min-w-0 flex-1">
+                <h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Equivalent Annual Cost (Alpha)</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Distribute total PV over the 3-year useful lifespan annuity factor.</p>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg font-code-sm text-code-sm text-on-surface space-y-1.5">
+              <div class="flex justify-between items-center">
+                <span class="text-on-surface-variant">Calculation:</span>
+                <span>$79,894.80 ÷ 2.48685</span>
+              </div>
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2.5 rounded text-[14px]">
+                <span class="font-headline-sm text-[14px] text-on-surface">EAC (Machine Alpha)</span>
+                <span class="font-code-formula text-code-formula font-bold text-on-surface">$32,126.86 / yr</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-3 border border-outline-variant/15">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-on-primary font-code-sm text-code-sm font-semibold">
+                3
+              </div>
+              <div class="min-w-0 flex-1">
+                <h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Present Value of Beta's Costs</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aggregate 5-year operating annuity and capital outlay, subtracting terminal salvage inflow.</p>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg space-y-2 font-code-sm text-code-sm text-on-surface">
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2 rounded">
+                <span class="text-on-surface-variant">PVIFA(10%, 5 yrs)</span>
+                <span class="font-semibold">[1 − (1.10)<sup>-5</sup>] / 0.10 = <span class="text-secondary font-bold">3.79079</span></span>
+              </div>
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2 rounded">
+                <span class="text-on-surface-variant">PV of Operating Costs</span>
+                <span class="font-semibold">$6,000 × 3.79079 = <span class="text-on-surface font-bold">$22,744.74</span></span>
+              </div>
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2 rounded">
+                <div class="flex flex-col">
+                  <span class="text-on-surface-variant">PV Salvage Value (Year 5)</span>
+                  <span class="font-label-sm text-[10px] text-on-surface-variant">$5,000 × (1.10)<sup>-5</sup> = $5,000 × 0.62092</span>
+                </div>
+                <span class="font-semibold text-secondary font-mono">− $3,104.60</span>
+              </div>
+              <div class="flex justify-between items-center bg-secondary-container/30 text-on-secondary-container p-2 rounded font-semibold">
+                <span>Net Total PV (Beta)</span>
+                <span>$85k + $22.7k − $3.1k = $104,640.14</span>
+              </div>
+            </div>
+            <div class="bg-surface-container p-2.5 rounded-lg flex items-start gap-2">
+              <span class="material-symbols-outlined text-[17px] text-secondary flex-shrink-0 mt-0.5 filled">verified</span>
+              <p class="font-body-sm text-body-sm text-on-surface">
+                <strong class="font-semibold">Salvage Treatment:</strong> Salvage acts as a cash recovery at the end of Year 5. In a cost-minimization setup, it is strictly deducted from cumulative PV costs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-3 border border-outline-variant/15">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-on-primary font-code-sm text-code-sm font-semibold">
+                4
+              </div>
+              <div class="min-w-0 flex-1">
+                <h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Equivalent Annual Cost (Beta)</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Convert net PV over Beta's 5-year annuity factor.</p>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg font-code-sm text-code-sm text-on-surface space-y-1.5">
+              <div class="flex justify-between items-center">
+                <span class="text-on-surface-variant">Calculation:</span>
+                <span>$104,640.14 ÷ 3.79079</span>
+              </div>
+              <div class="flex justify-between items-center bg-surface-container-lowest p-2.5 rounded text-[14px]">
+                <span class="font-headline-sm text-[14px] text-on-surface">EAC (Machine Beta)</span>
+                <span class="font-code-formula text-code-formula font-bold text-secondary">$27,603.78 / yr</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Final Recommendation & Synthesis -->
+          <div class="bg-secondary p-4 rounded-xl text-on-secondary shadow-md space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-[18px]">check</span>
+                </div>
+                <span class="font-headline-sm text-[16px] font-semibold">Step 5: Executive Conclusion</span>
+              </div>
+              <span class="bg-on-secondary/20 px-2 py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider font-semibold">Selected</span>
+            </div>
+            <div class="bg-on-secondary/10 p-3 rounded-lg space-y-2">
+              <div class="flex items-baseline justify-between">
+                <span class="font-headline-sm text-headline-sm tracking-tight font-bold">Select Machine Beta</span>
+                <span class="font-code-sm text-code-sm font-bold bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">
+                  Save $4,523.08/yr
+                </span>
+              </div>
+              <p class="font-body-sm text-body-sm leading-relaxed text-on-secondary/90">
+                Although Machine Beta demands a higher capital commitment upfront ($85,000 vs. $60,000), its longer life and lower operating costs yield an Equivalent Annual Cost of <span class="font-semibold text-white">$27,603.78</span> compared to <span class="font-semibold text-white">$32,126.86</span> for Machine Alpha.
+              </p>
+            </div>
+            <!-- Comparative Annual Savings Metric -->
+            <div class="grid grid-cols-2 gap-2 pt-1 text-center font-code-sm text-code-sm">
+              <div class="bg-on-secondary/15 p-2 rounded">
+                <div class="text-[11px] opacity-80">EAC Alpha</div>
+                <div class="font-bold text-[13px]">$32,126.86</div>
+              </div>
+              <div class="bg-secondary-container text-on-secondary-container p-2 rounded shadow-sm">
+                <div class="text-[11px] font-semibold opacity-90">EAC Beta (Optimal)</div>
+                <div class="font-bold text-[13px]">$27,603.78</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scratchpad Interactive Sandbox Toggle Callout -->
+        <div class="bg-surface-container-high p-3.5 rounded-xl flex items-center justify-between border border-outline-variant/15">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-surface shadow-sm">
+              <span class="material-symbols-outlined text-[20px]">edit_note</span>
+            </div>
+            <div class="min-w-0">
+              <p class="font-headline-sm text-[14px] text-on-surface truncate font-semibold">Custom Variable Scratchpad</p>
+              <p class="font-body-sm text-[11px] text-on-surface-variant truncate">Swap r=12% or test salvage scenarios</p>
+            </div>
+          </div>
+          <button class="bg-primary text-on-primary px-3 py-1.5 rounded font-body-sm text-body-sm font-semibold flex items-center gap-1 active:scale-95 transition-transform" id="scratchpadBtn">
+            <span>Open</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </button>
+        </div>
+
+        <!-- Bottom Dedicated Action Toolbar -->
+        <div class="pt-2 flex flex-col gap-2">
+          <div class="grid grid-cols-2 gap-2">
+            <!-- Save to Revision -->
+            <button class="flex items-center justify-center gap-1.5 bg-surface-container-lowest py-3 px-3 rounded-lg shadow-sm text-on-surface font-body-md text-body-md font-semibold active:bg-surface-container-high transition-colors border border-outline-variant/15" id="saveRevisionBtn">
+              <span class="material-symbols-outlined text-[19px] text-secondary">bookmark_add</span>
+              <span>Save to Revision</span>
+            </button>
+            <!-- Try Custom Numbers -->
+            <button class="flex items-center justify-center gap-1.5 bg-surface-container-lowest py-3 px-3 rounded-lg shadow-sm text-on-surface font-body-md text-body-md font-semibold active:bg-surface-container-high transition-colors border border-outline-variant/15" id="customNumbersBtn">
+              <span class="material-symbols-outlined text-[19px] text-on-surface-variant">tune</span>
+              <span>Try Custom</span>
+            </button>
+          </div>
+          <!-- Ask Question on Step -->
+          <button class="w-full flex items-center justify-center gap-2 bg-primary text-on-primary py-3.5 px-4 rounded-lg shadow-md font-body-md text-body-md font-semibold active:bg-on-surface-variant transition-colors" id="askQuestionBtn">
+            <span class="material-symbols-outlined text-[19px]">live_help</span>
+            <span>Ask Question on This Step</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 4: PRACTICE WORKBENCH & CUSTOM SOLVER -->
+      <!-- ========================================== -->
+      <section id="view-practice" class="hidden flex flex-col w-full pb-6 space-y-space-md">
+        <!-- Header Context Badge & Screen Title -->
+        <div class="flex flex-col space-y-space-xs mt-space-xs">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1.5 bg-secondary-container/50 text-on-secondary-container px-2.5 py-0.5 rounded-full">
+              <span class="material-symbols-outlined text-[14px]">tune</span>
+              <span class="font-label-sm text-label-sm uppercase font-bold">Interactive Engine</span>
+            </div>
+            <span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+              <span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Ready
+            </span>
+          </div>
+          <h1 class="font-headline-md text-headline-md text-on-surface tracking-tight font-bold">Practice Workbench & Custom Solver</h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Model custom scenario parameters or test computational mastery with instant ledger verification.</p>
+        </div>
+
+        <!-- Interactive Segmented Mode Selector -->
+        <div class="bg-surface-container-high p-1 rounded-xl flex items-center justify-between shadow-sm">
+          <button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all duration-150 flex items-center justify-center gap-1.5 font-semibold" id="mode-solver" type="button">
+            <span class="material-symbols-outlined text-[16px] text-secondary">calculate</span>
+            <span>Custom Solver</span>
+          </button>
+          <button class="flex-1 py-2 px-3 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all duration-150 flex items-center justify-center gap-1.5 font-semibold" id="mode-quiz" type="button">
+            <span class="material-symbols-outlined text-[16px]">school</span>
+            <span>Practice / Quiz</span>
+          </button>
+        </div>
+
+        <!-- PRACTICE SUB-SECTION 1: CUSTOM SOLVER -->
+        <div id="practice-solver-section" class="flex flex-col space-y-space-md">
+          <!-- Topic Selector Section -->
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-space-xs border border-outline-variant/15">
+            <label class="font-label-sm text-label-sm text-on-surface-variant uppercase flex items-center justify-between font-bold">
+              <span>Active Financial Domain</span>
+              <span class="text-secondary font-code-sm">18 Modules</span>
+            </label>
+            <div class="relative">
+              <div class="flex items-center justify-between bg-surface-container-low px-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md cursor-pointer">
+                <div class="flex items-center gap-2 min-w-0">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">layers</span>
+                  <span class="font-semibold truncate">Capital Budgeting: EAC / NPV Solver</span>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant text-[20px]">unfold_more</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Variable Input Form -->
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-space-md border border-outline-variant/15">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+                <h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Parameters & Inputs</h2>
+              </div>
+              <button class="text-on-surface-variant hover:text-secondary font-label-sm text-label-sm underline transition-colors" id="reset-defaults" type="button">Reset Defaults</button>
+            </div>
+
+            <!-- Global Parameter: Discount Rate -->
+            <div class="bg-surface-container-low p-3 rounded-lg flex flex-col space-y-1.5">
+              <div class="flex justify-between items-center">
+                <label class="font-label-md text-label-md text-on-surface flex items-center gap-1 font-semibold" for="rate-input">
+                  <span>Cost of Capital (r)</span>
+                  <span class="text-on-surface-variant font-code-sm">(WACC)</span>
+                </label>
+                <span class="font-code-sm text-code-sm text-secondary bg-secondary-container/30 px-2 py-0.5 rounded font-bold">Annualized</span>
+              </div>
+              <div class="relative flex items-center">
+                <input class="w-full bg-surface-container-lowest text-on-surface font-code-formula text-code-formula px-3 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high transition-colors font-bold" id="rate-input" type="text" value="10.0"/>
+                <span class="absolute right-3 font-code-sm text-code-sm text-on-surface-variant font-bold">%</span>
+              </div>
+            </div>
+
+            <!-- Comparative Machine Columns / Cards -->
+            <div class="space-y-space-sm">
+              <!-- Machine 1 / Alpha -->
+              <div class="bg-surface-container-low p-space-md rounded-xl space-y-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 rounded-full bg-primary text-on-primary font-code-sm text-code-sm flex items-center justify-center font-bold">1</span>
+                    <input class="bg-transparent font-headline-sm text-headline-sm text-on-surface w-28 focus:bg-surface-container-lowest px-1 rounded transition-colors font-bold" id="m1-name" type="text" value="Alpha"/>
+                  </div>
+                  <span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-2 py-0.5 rounded text-on-surface-variant font-bold">Asset A</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Initial Cost (I₀)</span>
+                    <div class="relative flex items-center">
+                      <span class="absolute left-2.5 font-code-sm text-code-sm text-on-surface-variant">$</span>
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm pl-6 pr-2 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m1-cost" type="text" value="60,000"/>
+                    </div>
+                  </div>
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Annual O&M Cost</span>
+                    <div class="relative flex items-center">
+                      <span class="absolute left-2.5 font-code-sm text-code-sm text-on-surface-variant">$</span>
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm pl-6 pr-2 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m1-om" type="text" value="8,000"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Useful Life</span>
+                    <div class="relative flex items-center">
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm px-2.5 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m1-life" type="number" value="3"/>
+                      <span class="absolute right-2.5 font-code-sm text-code-sm text-on-surface-variant">yrs</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Salvage Value</span>
+                    <div class="relative flex items-center">
+                      <span class="absolute left-2.5 font-code-sm text-code-sm text-on-surface-variant">$</span>
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm pl-6 pr-2 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m1-salvage" type="text" value="0"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Machine 2 / Beta -->
+              <div class="bg-surface-container-low p-space-md rounded-xl space-y-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-code-sm text-code-sm flex items-center justify-center font-bold">2</span>
+                    <input class="bg-transparent font-headline-sm text-headline-sm text-on-surface w-28 focus:bg-surface-container-lowest px-1 rounded transition-colors font-bold" id="m2-name" type="text" value="Beta"/>
+                  </div>
+                  <span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-2 py-0.5 rounded text-on-surface-variant font-bold">Asset B</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Initial Cost (I₀)</span>
+                    <div class="relative flex items-center">
+                      <span class="absolute left-2.5 font-code-sm text-code-sm text-on-surface-variant">$</span>
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm pl-6 pr-2 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m2-cost" type="text" value="85,000"/>
+                    </div>
+                  </div>
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Annual O&M Cost</span>
+                    <div class="relative flex items-center">
+                      <span class="absolute left-2.5 font-code-sm text-code-sm text-on-surface-variant">$</span>
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm pl-6 pr-2 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m2-om" type="text" value="6,000"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Useful Life</span>
+                    <div class="relative flex items-center">
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm px-2.5 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m2-life" type="number" value="5"/>
+                      <span class="absolute right-2.5 font-code-sm text-code-sm text-on-surface-variant">yrs</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col space-y-1">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Salvage Value</span>
+                    <div class="relative flex items-center">
+                      <span class="absolute left-2.5 font-code-sm text-code-sm text-on-surface-variant">$</span>
+                      <input class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm pl-6 pr-2 py-2 rounded shadow-sm focus:outline-none focus:bg-surface-container-high" id="m2-salvage" type="text" value="5,000"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Primary Action Button -->
+            <button class="w-full bg-primary hover:bg-on-surface text-on-primary py-3 px-4 rounded-lg font-body-md text-body-md font-semibold flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.99]" id="calc-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">bolt</span>
+              <span>Calculate & Generate Step-by-Step Manual Solution</span>
+            </button>
+          </div>
+
+          <!-- Live Results Preview Card -->
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-space-md relative overflow-hidden border border-outline-variant/15">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[22px]">insights</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Computational Evaluation</h3>
+              </div>
+              <span class="font-label-sm text-label-sm bg-secondary text-on-secondary px-2 py-0.5 rounded uppercase font-bold">Verified</span>
+            </div>
+
+            <!-- Comparative Metric Cards -->
+            <div class="grid grid-cols-2 gap-2">
+              <div class="bg-surface-container-low p-3 rounded-lg flex flex-col space-y-1">
+                <span id="out-m1-name" class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Machine Alpha EAC</span>
+                <span id="out-m1-eac" class="font-code-formula text-code-formula font-bold text-on-surface">$32,126.86<span class="text-xs text-on-surface-variant font-normal">/yr</span></span>
+                <span class="font-body-sm text-body-sm text-error font-medium">Higher Outflow</span>
+              </div>
+              <div class="bg-secondary-container/20 p-3 rounded-lg flex flex-col space-y-1">
+                <span id="out-m2-name" class="font-label-sm text-label-sm text-on-secondary-container font-semibold">Machine Beta EAC</span>
+                <span id="out-m2-eac" class="font-code-formula text-code-formula font-bold text-secondary">$27,603.78<span class="text-xs text-secondary font-normal">/yr</span></span>
+                <span class="font-body-sm text-body-sm text-secondary font-bold">Optimal Lifecycle</span>
+              </div>
+            </div>
+
+            <!-- Decision Banner -->
+            <div class="bg-secondary p-3.5 rounded-lg text-on-secondary flex items-start gap-3 shadow-sm">
+              <span class="material-symbols-outlined text-[24px] flex-shrink-0 text-secondary-fixed">recommend</span>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider font-bold">Optimal Recommendation</span>
+                <span id="out-decision-title" class="font-headline-sm text-headline-sm font-bold truncate">Machine Beta (Saves $4,523.08/yr)</span>
+                <span id="out-decision-desc" class="font-body-sm text-body-sm text-on-secondary/80 mt-0.5">Beta provides a lower annualized capital + operating burden despite the higher initial outlay.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Step-by-Step Ledger Trace Accordion -->
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-space-sm border border-outline-variant/15">
+            <button class="w-full flex items-center justify-between text-left py-1 text-on-surface" id="trace-toggle-btn" type="button">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[20px]">account_tree</span>
+                <div>
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Show Detailed Calculation Trace</h4>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">5 Steps Generated & Audited</span>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200" id="trace-toggle-icon">expand_more</span>
+            </button>
+
+            <!-- Trace List Container -->
+            <div class="space-y-3 pt-2" id="trace-container">
+              <!-- Populated dynamically via AppState.recalculatePracticeSolver() -->
+            </div>
+          </div>
+
+          <!-- Pedagogical Reference Cards -->
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-space-sm border border-outline-variant/15">
+            <div class="flex items-center justify-between">
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Methodology Blueprint</span>
+              <span class="font-code-sm text-code-sm text-secondary font-bold">Reference 04-A</span>
+            </div>
+            <div class="relative w-full h-32 rounded-lg overflow-hidden bg-primary-container">
+              <img class="w-full h-full object-cover opacity-60" data-alt="Financial trading floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMA2Wja7_LvlyFM2fJQoixv7xFBUqZtQwCDEsyj5W-GXb93yb8FxdSnKV2hLOjBV9XMYQdGHa1L07aS60J0Q-DKxQF7d_AV_0Myvq_jKK59Y2t4FsBCR1sRJpfFQqawXNcRuy6wwd8U4mBZi9dxhl5_4JRH3oAGTldi_mYhawTq3IyyFncEGs6tZ6FyYrZs6vzqqB08lqllRYsp_VAnQOSfwA862Hx8yHEo0upZFRW"/>
+              <div class="absolute inset-0 bg-primary/40 flex items-center p-4">
+                <div class="text-on-primary">
+                  <span class="font-label-sm text-label-sm text-secondary-container uppercase font-bold">Theory Insight</span>
+                  <p class="font-headline-sm text-headline-sm font-semibold leading-tight mt-0.5">Unequal Lives Capital Decisions</p>
+                  <p class="font-body-sm text-body-sm text-on-primary/90 mt-1">EAC standardizes mutually exclusive assets with mismatched lifespans into perpetual annualized annuities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="grid grid-cols-2 gap-2 pt-1">
+            <button onclick="window.print()" class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm font-semibold" type="button">
+              <span class="material-symbols-outlined text-[18px]">download</span>
+              <span>Download Step PDF</span>
+            </button>
+            <button onclick="AppState.showToast('Calculation saved to personal exercise bank', 'bookmark_added')" class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm font-semibold" type="button">
+              <span class="material-symbols-outlined text-[18px] text-secondary">bookmark_add</span>
+              <span>Save to Exercises</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PRACTICE SUB-SECTION 2: QUIZ / TEST MODE -->
+        <div id="practice-quiz-area" class="hidden flex flex-col space-y-space-md">
+          <!-- Populated dynamically via AppState.renderQuizQuestion() -->
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 5: SAVED SUMS & FORMULA REVISION      -->
+      <!-- ========================================== -->
+      <section id="view-saved" class="hidden flex flex-col w-full pb-10">
+        <!-- Top Editorial Header & Revision Progress -->
+        <div class="flex flex-col gap-space-xs pt-2">
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5 font-bold">
+              <span class="material-symbols-outlined text-[16px] filled">bookmark_heart</span>
+              Personal Knowledge Vault
+            </span>
+            <div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded text-on-surface font-semibold">
+              <span class="material-symbols-outlined text-[14px] text-tertiary-container filled">verified</span>
+              <span class="font-label-sm text-label-sm">Exam Mode Ready</span>
+            </div>
+          </div>
+          <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Saved Sums & Formula Revision</h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Annotated multi-step problems, mental shortcuts, and critical calculation gotchas for high-stakes exams.</p>
+        </div>
+
+        <!-- Quick Stats Ribbon / Study Meter -->
+        <div class="mt-space-md bg-surface-container-low rounded-xl p-space-md shadow-sm border border-outline-variant/15">
+          <div class="flex items-center justify-between pb-space-sm">
+            <div class="flex items-center gap-space-xs text-on-surface">
+              <span class="material-symbols-outlined text-[18px] text-secondary">analytics</span>
+              <span class="font-label-md text-label-md text-on-surface font-semibold">Active Vault Snapshot</span>
+            </div>
+            <span class="font-label-sm text-label-sm text-secondary bg-secondary-container/30 px-2 py-0.5 rounded-full font-bold">Updated Today</span>
+          </div>
+          <div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+            <div class="flex flex-col bg-surface-container-lowest p-2 rounded shadow-sm border border-outline-variant/10">
+              <span id="saved-stat-sums" class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface tracking-tighter">3</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 font-semibold">Bookmarked Sums</span>
+            </div>
+            <div class="flex flex-col bg-surface-container-lowest p-2 rounded shadow-sm border border-outline-variant/10">
+              <span class="font-display-lg-mobile text-display-lg-mobile font-bold text-secondary tracking-tighter">8</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 font-semibold">Formula Cards</span>
+            </div>
+            <div class="flex flex-col bg-surface-container-lowest p-2 rounded shadow-sm border border-outline-variant/10">
+              <span class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface tracking-tighter">5</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 font-semibold">Exam Traps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Scrollable Tab Filters -->
+        <div class="mt-space-md flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar" id="savedFilterTabs">
+          <button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm whitespace-nowrap font-semibold">
+            <span class="material-symbols-outlined text-[16px]">bookmark</span>
+            Bookmarked Sums
+          </button>
+          <button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-colors font-semibold">
+            <span class="material-symbols-outlined text-[16px]">menu_book</span>
+            Formula Cheat Sheets (8)
+          </button>
+          <button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-colors font-semibold">
+            <span class="material-symbols-outlined text-[16px] text-error">warning</span>
+            Exam Gotchas & Mistakes (5)
+          </button>
+        </div>
+
+        <!-- SUB-SECTION 1: BOOKMARKED SUMS -->
+        <div id="saved-sums-section" class="flex flex-col space-y-space-md mt-space-md">
+          <!-- Quick Formula Card Carousel / Widget -->
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center justify-between">
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">bolt</span> Quick Formula Flashcards (Tap to Flip)
+              </span>
+              <span class="font-label-sm text-label-sm text-secondary font-semibold">Interactive</span>
+            </div>
+
+            <!-- Formula Cards Strip -->
+            <div class="flex gap-space-sm overflow-x-auto pb-2 -mx-gutter-mobile px-gutter-mobile no-scrollbar">
+              <!-- Formula 1: Gordon Growth Model (Flip Card) -->
+              <div class="flip-card perspective-1000 min-w-[280px] max-w-[280px] h-48 cursor-pointer">
+                <div class="flip-card-inner">
+                  <!-- Front -->
+                  <div class="flip-card-front bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between border border-outline-variant/15">
+                    <div>
+                      <div class="flex items-center justify-between mb-1.5">
+                        <span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded font-bold">EQUITY VALUATION</span>
+                        <span class="material-symbols-outlined text-secondary text-[18px] filled">verified</span>
+                      </div>
+                      <div class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold">Gordon Growth Model</div>
+                    </div>
+                    <div class="bg-surface-container-low p-2.5 rounded font-code-formula text-code-formula text-on-surface font-bold text-center tracking-wide">
+                      P₀ = D₁ / (Kₑ - g)
+                    </div>
+                    <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                      <span>D₁ = D₀ × (1 + g)</span>
+                      <span class="text-secondary font-semibold">Tap to flip ↻</span>
+                    </div>
+                  </div>
+                  <!-- Back -->
+                  <div class="flip-card-back bg-primary-container text-on-primary rounded-xl p-space-md shadow-md flex flex-col justify-between">
+                    <div>
+                      <span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Assumptions & Rules</span>
+                      <p class="font-body-sm text-body-sm text-on-primary/90 mt-2 leading-relaxed">
+                        Applies strictly when Kₑ > g with constant perpetual growth. Flotation costs should reduce net price: P₀(1 - f).
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between font-label-sm text-label-sm text-secondary-fixed-dim">
+                      <span>CFA Level I Core</span>
+                      <span>Tap to flip back</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Formula 2: Modigliani-Miller Proposition II (Flip Card) -->
+              <div class="flip-card perspective-1000 min-w-[280px] max-w-[280px] h-48 cursor-pointer">
+                <div class="flip-card-inner">
+                  <!-- Front -->
+                  <div class="flip-card-front bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between border border-outline-variant/15">
+                    <div>
+                      <div class="flex items-center justify-between mb-1.5">
+                        <span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded font-bold">CAPITAL STRUCTURE</span>
+                        <span class="material-symbols-outlined text-on-surface-variant text-[18px]">lock_reset</span>
+                      </div>
+                      <div class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold">M&M Proposition II (Taxes)</div>
+                    </div>
+                    <div class="bg-surface-container-low p-2.5 rounded font-code-formula text-code-formula text-on-surface font-bold text-center tracking-wide">
+                      rₑ = r₀ + (r₀ - r_d)(1 - T)(D / E)
+                    </div>
+                    <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                      <span>Tax Shield Benefit</span>
+                      <span class="text-secondary font-semibold">Tap to flip ↻</span>
+                    </div>
+                  </div>
+                  <!-- Back -->
+                  <div class="flip-card-back bg-primary-container text-on-primary rounded-xl p-space-md shadow-md flex flex-col justify-between">
+                    <div>
+                      <span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Leverage & Return</span>
+                      <p class="font-body-sm text-body-sm text-on-primary/90 mt-2 leading-relaxed">
+                        Leverage increases equity risk linearly, cushioned by the interest tax shield (1 - T). Firm value: V_L = V_U + (T × D).
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between font-label-sm text-label-sm text-secondary-fixed-dim">
+                      <span>High Trap Rate</span>
+                      <span>Tap to flip back</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saved Items List Section -->
+          <div class="flex flex-col gap-space-md">
+            <div class="flex items-center justify-between">
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Annotated Problem Walkthroughs</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Live Synced</span>
+            </div>
+
+            <!-- Dynamic List Container for Bookmarks -->
+            <div class="flex flex-col gap-space-md" id="savedSumsList">
+              <!-- Populated dynamically via AppState.renderSavedView() -->
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB-SECTION 2: FORMULA CHEAT SHEETS (HIDDEN INITIALLY) -->
+        <div id="saved-formulas-section" class="hidden flex flex-col space-y-3 mt-space-md">
+          <div class="p-3 bg-surface-container rounded-xl flex items-center justify-between">
+            <span class="font-headline-sm text-on-surface font-bold">Formula Quick Reference Guide</span>
+            <span class="font-code-sm text-secondary font-bold">8 Master Equations</span>
+          </div>
+
+          <div class="space-y-2.5">
+            <!-- WACC -->
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/15 space-y-1.5 shadow-sm">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-sm text-sm text-on-surface font-bold">Weighted Average Cost of Capital (WACC)</span>
+                <span class="font-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.2 rounded font-bold">Cost of Capital</span>
+              </div>
+              <div class="font-code-formula text-sm bg-surface-container-low p-2 rounded text-on-surface font-bold">
+                WACC = (E/V)·Kₑ + (D/V)·K_d·(1 - T) + (P/V)·K_p
+              </div>
+              <p class="font-body-sm text-xs text-on-surface-variant">Note: Always apply target market value weights, not historical balance sheet book values.</p>
+            </div>
+
+            <!-- CAPM -->
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/15 space-y-1.5 shadow-sm">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-sm text-sm text-on-surface font-bold">Capital Asset Pricing Model (CAPM)</span>
+                <span class="font-label-sm bg-surface-container-high text-on-surface px-2 py-0.2 rounded font-bold">Equity</span>
+              </div>
+              <div class="font-code-formula text-sm bg-surface-container-low p-2 rounded text-on-surface font-bold">
+                Kₑ = R_f + β × (R_m - R_f)
+              </div>
+              <p class="font-body-sm text-xs text-on-surface-variant">Where (R_m - R_f) is the Equity Risk Premium (ERP). Beta measures systematic market risk.</p>
+            </div>
+
+            <!-- EAC -->
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/15 space-y-1.5 shadow-sm">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-sm text-sm text-on-surface font-bold">Equivalent Annual Cost (EAC)</span>
+                <span class="font-label-sm bg-surface-container-high text-on-surface px-2 py-0.2 rounded font-bold">Capital Budgeting</span>
+              </div>
+              <div class="font-code-formula text-sm bg-surface-container-low p-2 rounded text-on-surface font-bold">
+                EAC = Net PV of Lifecycle Costs ÷ PVIFA(r, n)
+              </div>
+              <p class="font-body-sm text-xs text-on-surface-variant">Used to evaluate mutually exclusive assets with mismatched productive lifespans.</p>
+            </div>
+
+            <!-- Bond Approximation -->
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/15 space-y-1.5 shadow-sm">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-sm text-sm text-on-surface font-bold">Bond YTM Approximation Formula</span>
+                <span class="font-label-sm bg-surface-container-high text-on-surface px-2 py-0.2 rounded font-bold">Fixed Income</span>
+              </div>
+              <div class="font-code-formula text-sm bg-surface-container-low p-2 rounded text-on-surface font-bold">
+                YTM ≈ [ C + (F - P) / n ] ÷ [ (F + P) / 2 ]
+              </div>
+              <p class="font-body-sm text-xs text-on-surface-variant">For semi-annual coupons: replace C with C/2, replace n with 2n, and double the periodic yield.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB-SECTION 3: EXAM GOTCHAS (HIDDEN INITIALLY) -->
+        <div id="saved-gotchas-section" class="hidden flex flex-col space-y-3 mt-space-md">
+          <div class="p-3 bg-error-container/30 text-on-error-container rounded-xl flex items-center gap-2 font-semibold">
+            <span class="material-symbols-outlined text-[20px] text-error">warning</span>
+            <span>Top 5 Candidate Traps & University Pitfalls</span>
+          </div>
+
+          <div class="space-y-3">
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border-l-4 border-error space-y-1.5 shadow-sm">
+              <span class="font-headline-sm text-sm font-bold text-on-surface">1. Terminal Value Timing in DCF</span>
+              <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                In explicit multi-year models, numerator for terminal value is <code class="font-code-sm bg-surface-container px-1 rounded font-bold">CF_{n+1} = CF_n × (1 + g)</code>. Never use CF_n without the growth increment! Also remember to discount TV back to t = 0.
+              </p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border-l-4 border-error space-y-1.5 shadow-sm">
+              <span class="font-headline-sm text-sm font-bold text-on-surface">2. Salvage Value Deduction in EAC</span>
+              <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                Salvage value is a cash inflow at the end of the machine's life. In EAC cost minimization, <strong class="text-secondary font-semibold">deduct</strong> its discounted present value from total costs before dividing by PVIFA.
+              </p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border-l-4 border-error space-y-1.5 shadow-sm">
+              <span class="font-headline-sm text-sm font-bold text-on-surface">3. Flotation Costs Adjustment Location</span>
+              <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                Flotation costs should be added to the initial investment outlay at t = 0: <code class="font-code-sm bg-surface-container px-1 rounded font-bold">Outlay / (1 - f)</code>. Adjusting WACC creates an artificial perpetual penalty.
+              </p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-3.5 rounded-xl border-l-4 border-error space-y-1.5 shadow-sm">
+              <span class="font-headline-sm text-sm font-bold text-on-surface">4. Semi-Annual Coupon Period Doubling</span>
+              <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                Always multiply lifespan n by 2 and divide annual coupon by 2. Forgetting to double n is the most common time-pressure exam mistake.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study Session Motivation Card -->
+        <div class="mt-space-lg bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-sm shadow-sm border border-outline-variant/15">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0">
+              <span class="material-symbols-outlined text-[20px]">psychology</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-label-md text-label-md text-on-surface font-bold">Spaced Repetition Active</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant">3 sums due for 72h recall review</span>
+            </div>
+          </div>
+          <button id="startDrillBtn" class="bg-surface-container-lowest text-secondary px-3 py-1.5 rounded font-label-sm text-label-sm font-bold shadow-sm whitespace-nowrap hover:bg-white active:scale-95 transition-all">
+            Start Drill
+          </button>
+        </div>
+
+        <!-- Floating / Sticky Bottom PDF Export Bar -->
+        <div class="sticky bottom-2 z-40 mt-space-xl">
+          <div class="bg-primary text-on-primary rounded-xl p-space-sm shadow-xl flex items-center justify-between gap-space-sm">
+            <div class="flex items-center gap-2.5 pl-1 min-w-0">
+              <div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-md text-label-md text-on-primary font-bold truncate">Export Revision Guide</span>
+                <span class="font-label-sm text-label-sm text-primary-fixed-dim truncate">Ready: Solved Sums + Formula Cards</span>
+              </div>
+            </div>
+            <button id="exportPdfBtn" class="flex items-center gap-1.5 bg-secondary text-on-secondary px-3.5 py-2 rounded-lg font-label-md text-label-md font-semibold flex-shrink-0 active:scale-95 transition-transform shadow-sm">
+              <span>Download</span>
+              <span class="material-symbols-outlined text-[16px]">download</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- GLOBAL FIXED BOTTOM TAB NAVIGATION BAR -->
+    <nav class="fixed bottom-0 w-full max-w-[inherit] z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)] border-t border-outline-variant/15" data-active-classes="text-secondary">
+      <div class="flex justify-around items-center h-16 px-space-xs">
+        <a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 transition-colors text-secondary font-semibold" data-path="topics" href="#">
+          <span class="material-symbols-outlined text-[22px]">category</span>
+          <span class="font-label-sm text-label-sm">Topics</span>
+        </a>
+        <a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant transition-colors hover:text-on-surface" data-path="problems" href="#">
+          <span class="material-symbols-outlined text-[22px]">menu_book</span>
+          <span class="font-label-sm text-label-sm">Problems</span>
+        </a>
+        <a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant transition-colors hover:text-on-surface" data-path="solver-workbench" href="#">
+          <span class="material-symbols-outlined text-[22px]">function</span>
+          <span class="font-label-sm text-label-sm">Solve</span>
+        </a>
+        <a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant transition-colors hover:text-on-surface" data-path="practice" href="#">
+          <span class="material-symbols-outlined text-[22px]">calculate</span>
+          <span class="font-label-sm text-label-sm">Practice</span>
+        </a>
+        <a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant transition-colors hover:text-on-surface" data-path="saved" href="#">
+          <span class="material-symbols-outlined text-[22px]">bookmark</span>
+          <span class="font-label-sm text-label-sm">Saved</span>
+          <span id="saved-tab-badge" class="absolute top-1 right-2 w-4 h-4 rounded-full bg-secondary text-on-secondary text-[9px] font-bold flex items-center justify-center">3</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- FLOATING TOAST NOTIFICATION -->
+    <div id="app-floating-toast" class="fixed top-20 left-4 right-4 max-w-[400px] mx-auto z-50 bg-primary-container text-on-primary-fixed p-3.5 rounded-xl shadow-2xl flex items-center justify-between opacity-0 pointer-events-none translate-y-2 transition-all duration-300 border border-outline-variant/20">
+      <div class="flex items-center gap-2.5">
+        <span class="material-symbols-outlined text-[20px] text-secondary-fixed toast-icon filled">bookmark_check</span>
+        <span class="font-body-sm text-body-sm font-semibold toast-text text-on-primary">Saved to Revision Sheet</span>
+      </div>
+      <button onclick="document.getElementById('app-floating-toast').classList.add('opacity-0', 'pointer-events-none')" class="text-on-primary-container font-label-sm text-label-sm uppercase font-bold px-2 py-0.5 rounded hover:bg-white/10">Dismiss</button>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE MODAL 1: VARIABLE SCRATCHPAD   -->
+    <!-- ========================================== -->
+    <div id="scratchpadModal" class="hidden fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-surface rounded-2xl w-full max-w-sm p-4 space-y-3 shadow-2xl border border-outline-variant/30 animate-in fade-in zoom-in-95">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span>
+            <h3 class="font-headline-sm text-base font-bold text-on-surface">Interactive Variable Sandbox</h3>
+          </div>
+          <button id="closeScratchpad" class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+
+        <p class="font-body-sm text-xs text-on-surface-variant">Test how changes to Delta Corp's discount rate affect the EAC outcome:</p>
+
+        <div class="space-y-2">
+          <label class="font-label-sm text-xs text-on-surface font-semibold flex justify-between">
+            <span>Discount Rate (r):</span>
+            <span id="sp-rate-val" class="font-code-sm text-secondary font-bold">10.0%</span>
+          </label>
+          <input id="sp-rate" type="range" min="5" max="25" step="0.5" value="10" class="w-full accent-secondary" oninput="document.getElementById('sp-rate-val').textContent = parseFloat(this.value).toFixed(1) + '%'"/>
+        </div>
+
+        <div id="sp-result" class="space-y-2 pt-1 bg-surface-container-low p-2.5 rounded-xl">
+          <!-- Dynamically computed in app.js -->
+        </div>
+
+        <button onclick="AppState.navigate('practice'); document.getElementById('scratchpadModal').classList.add('hidden');" class="w-full bg-primary text-on-primary py-2 rounded-lg font-label-md text-xs font-semibold flex items-center justify-center gap-1 shadow-sm">
+          <span>Open Full Workbench</span>
+          <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE MODAL 2: AI & PEER TUTOR       -->
+    <!-- ========================================== -->
+    <div id="aiTutorModal" class="hidden fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-2 sm:p-4">
+      <div class="bg-surface rounded-2xl w-full max-w-md p-4 space-y-3 shadow-2xl border border-outline-variant/30 flex flex-col max-h-[85vh]">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[22px]">smart_toy</span>
+            <div>
+              <h3 class="font-headline-sm text-base font-bold text-on-surface">FinSolve Step Tutor</h3>
+              <span class="font-code-sm text-[10px] text-secondary">CFA Derivation Specialist</span>
+            </div>
+          </div>
+          <button id="closeAiModal" class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+
+        <!-- Chat history scroll area -->
+        <div id="aiTutorChatLog" class="flex flex-col space-y-2.5 overflow-y-auto max-h-64 p-2 bg-surface-container-lowest rounded-xl border border-outline-variant/15 text-xs">
+          <div class="flex items-start gap-2">
+            <div class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-[11px] flex items-center justify-center font-bold flex-shrink-0">AI</div>
+            <div class="bg-surface-container-low text-on-surface p-2.5 rounded-xl rounded-tl-none text-xs max-w-[88%] text-left space-y-1">
+              <p>Hello! I am your FinSolve Step Tutor for Problem #23 (EAC Method). Tap any concept below or ask any question:</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Question Chips -->
+        <div class="flex gap-1.5 overflow-x-auto pb-1 no-scrollbar text-[11px]">
+          <button onclick="askAiTutorChip('Why do we subtract salvage value in EAC?')" class="bg-surface-container hover:bg-surface-container-high text-on-surface px-2.5 py-1 rounded-full whitespace-nowrap font-medium transition-colors">
+            Why subtract salvage?
+          </button>
+          <button onclick="askAiTutorChip('What if lifespans were equal?')" class="bg-surface-container hover:bg-surface-container-high text-on-surface px-2.5 py-1 rounded-full whitespace-nowrap font-medium transition-colors">
+            What if lifespans were equal?
+          </button>
+          <button onclick="askAiTutorChip('How is PVIFA calculated?')" class="bg-surface-container hover:bg-surface-container-high text-on-surface px-2.5 py-1 rounded-full whitespace-nowrap font-medium transition-colors">
+            PVIFA formula breakdown
+          </button>
+        </div>
+
+        <!-- Question Input Field -->
+        <div class="flex items-center gap-1.5 pt-1">
+          <input id="aiTutorInput" type="text" placeholder="Ask about step 1, 2, 3 or salvage..." class="flex-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-3 py-2 text-xs text-on-surface focus:outline-none focus:border-secondary" onkeydown="if(event.key==='Enter') submitAiTutorQuery()"/>
+          <button onclick="submitAiTutorQuery()" class="bg-secondary text-on-secondary p-2 rounded-lg flex items-center justify-center hover:bg-secondary/90 transition-colors">
+            <span class="material-symbols-outlined text-[18px]">send</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE MODAL 3: 7-DAY STREAK DETAILS  -->
+    <!-- ========================================== -->
+    <div id="streakModal" class="hidden fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-surface rounded-2xl w-full max-w-sm p-4 space-y-3 shadow-2xl border border-outline-variant/30">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#c76c00] text-[22px] filled">local_fire_department</span>
+            <h3 class="font-headline-sm text-base font-bold text-on-surface">7-Day Study Momentum</h3>
+          </div>
+          <button id="closeStreakModal" class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+
+        <div class="flex items-center justify-around py-2 bg-surface-container-low rounded-xl">
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">M</span><span class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-xs flex items-center justify-center font-bold">✓</span></div>
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">T</span><span class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-xs flex items-center justify-center font-bold">✓</span></div>
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">W</span><span class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-xs flex items-center justify-center font-bold">✓</span></div>
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">T</span><span class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-xs flex items-center justify-center font-bold">✓</span></div>
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">F</span><span class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-xs flex items-center justify-center font-bold">✓</span></div>
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">S</span><span class="w-6 h-6 rounded-full bg-secondary text-on-secondary text-xs flex items-center justify-center font-bold">✓</span></div>
+          <div class="flex flex-col items-center"><span class="font-label-sm text-[10px] text-on-surface-variant">S</span><span class="w-6 h-6 rounded-full bg-[#c76c00] text-white text-xs flex items-center justify-center font-bold">★</span></div>
+        </div>
+
+        <p class="font-body-sm text-xs text-on-surface leading-relaxed">
+          You're on track for full syllabus coverage before Semester Finals! 42 of 118 practical numerical problems mastered.
+        </p>
+
+        <button onclick="document.getElementById('streakModal').classList.add('hidden')" class="w-full bg-secondary text-on-secondary py-2 rounded-lg font-label-md text-xs font-semibold">
+          Keep It Going
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE MODAL 4: SYLLABUS DIRECTORY    -->
+    <!-- ========================================== -->
+    <div id="syllabusModal" class="hidden fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-surface rounded-2xl w-full max-w-sm p-4 space-y-3 shadow-2xl border border-outline-variant/30 max-h-[85vh] flex flex-col">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[22px]">menu_book</span>
+            <h3 class="font-headline-sm text-base font-bold text-on-surface">CFA & MBA Syllabus Map</h3>
+          </div>
+          <button id="closeSyllabusModal" class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+
+        <div class="space-y-2 overflow-y-auto pr-1 text-xs">
+          <div class="p-2.5 bg-surface-container-low rounded-xl">
+            <strong class="text-on-surface block font-semibold">Unit 1: Time Value of Money</strong>
+            <span class="text-on-surface-variant">Compounding, Annuity Due, Perpetuity, Amortization</span>
+          </div>
+          <div class="p-2.5 bg-secondary-container/30 border border-secondary/30 rounded-xl">
+            <strong class="text-secondary block font-bold">Unit 2: Capital Budgeting Decisions</strong>
+            <span class="text-on-surface-variant">NPV, IRR, PI, Payback, EAC, Capital Rationing</span>
+          </div>
+          <div class="p-2.5 bg-surface-container-low rounded-xl">
+            <strong class="text-on-surface block font-semibold">Unit 3: Cost of Capital & WACC</strong>
+            <span class="text-on-surface-variant">Component Costs, CAPM, Target Capital Weights, Flotation</span>
+          </div>
+          <div class="p-2.5 bg-surface-container-low rounded-xl">
+            <strong class="text-on-surface block font-semibold">Unit 4: Capital Structure Theories</strong>
+            <span class="text-on-surface-variant">NI, NOI, Traditional, Modigliani-Miller with/without Taxes</span>
+          </div>
+          <div class="p-2.5 bg-surface-container-low rounded-xl">
+            <strong class="text-on-surface block font-semibold">Unit 5: Bond Valuation & Fixed Income</strong>
+            <span class="text-on-surface-variant">Pricing, YTM Approximation, Interpolation, Duration</span>
+          </div>
+          <div class="p-2.5 bg-surface-container-low rounded-xl">
+            <strong class="text-on-surface block font-semibold">Unit 6: Working Capital Management</strong>
+            <span class="text-on-surface-variant">Cash Conversion Cycle, Operating Cycle, Receivables DSO</span>
+          </div>
+        </div>
+
+        <button onclick="document.getElementById('syllabusModal').classList.add('hidden'); AppState.navigate('problems');" class="w-full bg-secondary text-on-secondary py-2 rounded-lg font-label-md text-xs font-semibold">
+          Explore Problems
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE MODAL 5: SPACED RECALL DRILL   -->
+    <!-- ========================================== -->
+    <div id="drillModal" class="hidden fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-surface rounded-2xl w-full max-w-sm p-4 space-y-3 shadow-2xl border border-outline-variant/30">
+        <div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[22px]">psychology</span>
+            <h3 class="font-headline-sm text-base font-bold text-on-surface">Formula Recall Check</h3>
+          </div>
+          <button id="closeDrillModal" class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+
+        <div class="p-3 bg-surface-container-low rounded-xl text-xs space-y-2">
+          <p class="font-semibold text-on-surface">Question: In Equivalent Annual Cost (EAC), how do we handle terminal salvage value?</p>
+          <div class="space-y-1.5 pt-1">
+            <button onclick="alert('Correct! Salvage is an inflow, so its present value is subtracted from total lifecycle costs before dividing by PVIFA.'); document.getElementById('drillModal').classList.add('hidden');" class="w-full text-left p-2 rounded bg-surface-container-lowest hover:bg-secondary-container/40 hover:text-secondary border border-outline-variant/20 text-xs">
+              A) Discount to PV and SUBTRACT from total costs
+            </button>
+            <button onclick="alert('Incorrect! Salvage reduces the net burden, so adding it would inflate costs.');" class="w-full text-left p-2 rounded bg-surface-container-lowest hover:bg-error-container/40 border border-outline-variant/20 text-xs">
+              B) Discount to PV and ADD to total costs
+            </button>
+            <button onclick="alert('Incorrect! Salvage must be discounted back to t = 0.');" class="w-full text-left p-2 rounded bg-surface-container-lowest hover:bg-error-container/40 border border-outline-variant/20 text-xs">
+              C) Subtract face value without discounting
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- APPLICATION JAVASCRIPT BUNDLE -->
+  <script src="app.js"></script>
+</body>
+</html>

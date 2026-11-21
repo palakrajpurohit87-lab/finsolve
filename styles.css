@@ -1,0 +1,140 @@
+/* FinSolve Custom Styles & Animations */
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(118, 119, 125, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(118, 119, 125, 0.45);
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Base resets & utilities */
+body {
+  overscroll-behavior: none;
+}
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 1rem);
+}
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 0.5rem);
+}
+
+/* Mobile Frame Container Styling */
+.app-viewport {
+  transition: max-width 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+.mode-mobile-frame {
+  max-width: 440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+.mode-full-frame {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Animations & Transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.view-transition {
+  animation: fadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseHighlight {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 108, 74, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 108, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 108, 74, 0);
+  }
+}
+
+.highlight-pulse {
+  animation: pulseHighlight 1.6s ease-in-out;
+  border-color: #006c4a !important;
+}
+
+/* 3D Flip Card for Flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Material Symbols font tweaking */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+.material-symbols-outlined.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Print specific styles for PDF / Revision sheet export */
+@media print {
+  header, nav, #app-mode-bar, #scratchpadBtn, #askQuestionBtn, #saveRevisionBtn, #customNumbersBtn, .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .app-viewport {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
